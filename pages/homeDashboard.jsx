@@ -3,8 +3,11 @@ import AsideMenu from "../src/components/menu/asideMenu";
 import style from "../styles/Home.module.css"
 import HeaderPage from "../src/components/header/headerPage/header";
 import Main from "../src/components/main/main"
+import ModalNewItem from "../src/components/modal/modal";
+import { useState } from "react";
 
 export default function HomeDashboard() {
+
   return (
     <div className={style.boxRoot}>
       <AsideMenu/>
@@ -13,6 +16,7 @@ export default function HomeDashboard() {
         <Content/>
         <Main/>
       </div>
+      
     </div>
   )
 }

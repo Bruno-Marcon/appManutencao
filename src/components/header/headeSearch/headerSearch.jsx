@@ -1,7 +1,7 @@
 import ButtonAddItem from "../../button/button"
 import style from "./headerSearchStyle.module.css"
 
-const HeaderSearch = () =>{
+const HeaderSearch = ({setShowModal}) =>{
   return(
     <header className={style.headerPanel}>
       <div className={style.layer1}>
@@ -21,7 +21,7 @@ const HeaderSearch = () =>{
               </div>
             </div>
           </div>
-          <ButtonAddItem/>
+          <ButtonAddItem setShowModal={setShowModal}/>
         </div>
       </div>
     </header>
