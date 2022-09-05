@@ -1,0 +1,90 @@
+.table {
+  padding-top: 2px;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+.th{
+  padding: 14px;
+  border: 1px solid #ddd;
+  text-align: center;
+  color: #009be5;
+}
+.td {
+  padding: 14px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+.id{
+  padding: 10px;
+  background-color:#009be5 ;
+  color: #fff;
+}
+.tdButton{
+  width: 20%;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+.setupButtonEdit{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  background-color: #009be5;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  min-width: 64px;
+  padding: 3px 9px;
+  border-radius: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border: 1px solid currentColor;
+  border-color: rgba(255, 255, 255, 0.7);
+  color: #fff;
+  margin-left: 10px;
+}
+.setupButtonDelete{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  background-color: #C80002;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  min-width: 64px;
+  padding: 3px 9px;
+  border-radius: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border: 1px solid currentColor;
+  border-color: rgba(255, 255, 255, 0.7);
+  color: #fff;
+  margin-left: 10px;
+}
+.setupButtonDelete:hover{ 
+  background-color:#fff ;
+  transition-duration: 0.2s;
+  color: #C80002;
+}
+.setupButtonEdit:hover{ 
+  background-color:#fff ;
+  transition-duration: 0.2s;
+  color: #009be5;
+}

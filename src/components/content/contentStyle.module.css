@@ -1,0 +1,189 @@
+.content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #009be5;
+  flex-shrink: 0;
+  position: static;
+  z-index: 0;
+  color: #fff;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+.layer1{
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.wrapItens{
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: -8px;
+  width: calc(100% + 8px);
+  margin-left: -8px;
+  align-items: center;
+}
+.space{
+  padding-left: 1rem;
+  padding-top: 1rem;
+  margin: 0;
+  flex-direction: row;
+}
+.space2{
+  padding-left: 8px;
+  padding-top: 8px;
+  margin: 0;
+  flex-direction: row;
+}
+.title{
+  margin: 0;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  line-height: 1.334;
+  color: inherit;
+}
+.setupButton{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    font-size: 0.8125rem;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    min-width: 64px;
+    padding: 3px 9px;
+    border-radius: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border: 1px solid currentColor;
+    color: inherit;
+    border-color: currentColor;
+    text-transform: none;
+    border-color: rgba(255, 255, 255, 0.7);
+}
+.setupButton:hover{
+  background-color: #fff;
+  color:#009be5;
+}
+.spanSpaceColor{
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  inset: 0px;
+  border-radius: inherit;
+}
+.spanSpace{
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  inset: 0px;
+  border-radius: inherit;
+}
+.menuHori{
+    overflow: hidden;
+    min-height: 48px;
+    display: flex;
+    margin-left: 8px;
+}
+.menuItens{
+  position: relative;
+  display: inline-block;
+  flex: 1 1 auto;
+  white-space: nowrap;
+  overflow-x: hidden;
+  width: 100%;
+}
+.flexItens{
+  display: flex;
+}
+.buttonMenu{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    text-decoration: none;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    max-width: 360px;
+    position: relative;
+    min-height: 48px;
+    flex-shrink: 0;
+    overflow: hidden;
+    white-space: normal;
+    text-align: center;
+    flex-direction: column;
+    color: inherit;
+    opacity: 0.6;
+    text-transform: none;
+    margin: 0 16px;
+    opacity: 1;
+}
+.buttonMenu:hover{
+  border-bottom: 2px solid #fff;
+}
+
+@media(min-width:900px){
+  .space{
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  .space2{
+    flex-basis: 0;
+    flex-grow: 0;
+    max-width: 100%;
+  }
+}
+@media(min-width:600px){
+  .layer1{
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .space{
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  .space2{
+    flex-basis: 0;
+    flex-grow: 0;
+    max-width: 100%;
+  }
+  .buttonMenu{
+    padding: 0;
+    min-width: 0;
+  }
+}
