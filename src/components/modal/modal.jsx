@@ -1,29 +1,31 @@
 import style from './modalStyle.module.css'
 
-
 const ModalNewItem = ({setShowModal}) =>{
   return(
+    <div className={style.overlay}> 
       <form className={style.formModal}>
-        <div>
+        <h1 className={style.title}>Equipamentos</h1>
+        <div className={style.gap}>
           <label>Nome do Equipamento:</label>
-          <input type="text"/>
+          <input className={style.input} type="text" id='nomeEquipamento'/>
         </div>
-        <div>
+        <div className={style.gap}>
           <label>Marca:</label>
-          <input type="text"/>
+          <input className={style.input} type="text"/>
         </div>
-        <div>
+        <div className={style.gap}>
           <label>Modelo:</label>
-          <input type="text"/>
+          <input className={style.input} type="text"/>
         </div>
-        <div>
+        <div className={style.gap}>
           <label>Quantidade:</label>
-          <input type="text"/>
+          <input className={style.input} type="text"/>
         </div>
         <button className="buttonAdd" onClick={()=> setShowModal(false)}>
           Adicionar
         </button>
       </form>
+    </div>
   )
 }
 export default ModalNewItem

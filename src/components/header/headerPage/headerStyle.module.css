@@ -7,7 +7,6 @@
 .header{
   display: flex;
   flex-direction: column;
-  box-shadow: none;
   flex-shrink: 0;
   width: 100%;
   box-sizing: border-box;
@@ -16,8 +15,9 @@
   top: 0;
   left: auto;
   right: 0;
-  background-color: #009be5;
+  background-color: #174379;
   color: #fff;
+  box-shadow:0 20px 32px 0 rgba(0,0,0, 0.34);
 }
 .wrapItens{
   box-sizing: border-box;
