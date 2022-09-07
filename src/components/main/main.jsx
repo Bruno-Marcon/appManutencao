@@ -1,8 +1,8 @@
 import style from './mainStyle.module.css'
 import HeaderSearch from '../header/headeSearch/headerSearch'
-import TableList from '../table/table'
 import ModalNewItem from '../modal/modal'
 import { useState } from 'react'
+import TableData from '../table/lineTable'
 
 const Main = () =>{
 
@@ -13,7 +13,7 @@ const Main = () =>{
       <div className={style.panel1}>
         <HeaderSearch setShowModal={setShowModal}/>
         <div className={style.table}>
-         <TableList/>
+         <TableData/>
          {showModal ? (
               <ModalNewItem setShowModal={setShowModal}/>
             ) : null}

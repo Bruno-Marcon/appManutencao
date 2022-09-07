@@ -1,17 +1,16 @@
 import React from 'react';
 import style from './buttonStyle.module.css'
-
-const ButtonAddItem = ({setShowModal}) => {
+import ModalNewItem from '../../modal/modal'
+const ButtonAddItem = ({showModal,setShowModal}) => {
 
   return (
       <div className={style.layer2}>
             <button className={style.setupButtonNew} onClick={()=> setShowModal(true)}>
               Incluir
-              <span className={style.spanSpace}/>
             </button>
-            {/* {showModal ? (
+            {showModal ? (
               <ModalNewItem setShowModal={setShowModal}/>
-            ) : null} */}
+            ) : null}
           </div>
   );
 };
