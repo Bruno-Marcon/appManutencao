@@ -1,4 +1,4 @@
-import HomeDashboard from "./homeDashboard";
+import HomeDashboard from "./homeDashboard"
 
 export default function Home() {
   return (
