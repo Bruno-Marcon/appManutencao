@@ -1,3 +1,3 @@
-export default function handleSubmit(req, res) {
-  res.status(200).json(data.body)
+export default async function handleSubmit(req, res) {
+  res.status(200).json(res.ops[0])
 }
